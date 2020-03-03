@@ -1,0 +1,3 @@
+
+# Clock signal 
+NET "M_CLOCK" LOC = P123;

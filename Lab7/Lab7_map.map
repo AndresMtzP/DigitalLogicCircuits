@@ -1,0 +1,83 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'Lab7'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o Lab7_map.ncd Lab7.ngd Lab7.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Tue Apr 04 13:02:30 2017
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 16 secs 
+Total CPU  time at the beginning of Placer: 16 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:171855b4) REAL time: 17 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:916 - Local congestion has been detected on component outPin_OBUF.
+   There is a limitation that at most 2 global signals can drive non-clock pins
+   per CLB. The placer has detected that component outPin_OBUF has 3 non-clock
+   pins driven by global signals. Placement will continue but note that this
+   situation may lead to an unroutable situation. 
+ERROR:Place:1136 - This design contains a global buffer instance,
+   <sck00/clkout2_buf>, driving the net, <clk2>, that is driving the following
+   (first 30) non-clock load pins.
+   < PIN: Mmux_outPin11.A2; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. If you wish to override this recommendation, you may use the
+   CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote
+   this message to a WARNING and allow your design to continue.
+   < PIN "sck00/clkout2_buf.O" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+ERROR:Place:1136 - This design contains a global buffer instance,
+   <sck00/clkout3_buf>, driving the net, <clk3>, that is driving the following
+   (first 30) non-clock load pins.
+   < PIN: Mmux_outPin11.A5; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. If you wish to override this recommendation, you may use the
+   CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote
+   this message to a WARNING and allow your design to continue.
+   < PIN "sck00/clkout3_buf.O" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+ERROR:Place:1136 - This design contains a global buffer instance,
+   <sck00/clkout1_buf>, driving the net, <clk1>, that is driving the following
+   (first 30) non-clock load pins.
+   < PIN: Mmux_outPin11.A4; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. If you wish to override this recommendation, you may use the
+   CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote
+   this message to a WARNING and allow your design to continue.
+   < PIN "sck00/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 2.7  Design Feasibility Check (Checksum:171855b4) REAL time: 17 secs 
+
+Total REAL time to Placer completion: 17 secs 
+Total CPU  time to Placer completion: 17 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "Lab7_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   4
+Number of warnings :   1

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Andres\Documents\CompE470L\Lab6\lab6.ncd
+OUTFILE=C:\Users\Andres\Documents\CompE470L\Lab6\lab6.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\Andres\Documents\CompE470L\Lab6
+LICENSE=WebPack
+USER_INFO=177402567_1777513035_210618167_623

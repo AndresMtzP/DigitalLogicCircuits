@@ -1,0 +1,3 @@
+verilog work "../../../Downloads/Lab4TX.v"
+verilog work "Lab4RX.v"
+verilog work "Lab4Final.v"

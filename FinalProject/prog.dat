@@ -1,0 +1,40 @@
+A08F   // addi R1, R0, 7’b0001111      R1 = 000F
+A17F   // addi R2, R0, 7’b1111111      R2 = FFFF
+0530   // and R3, R1, R2        R3 = 000F
+0541   // or R4, R1, R2       R4 = FFFF
+11D2   // add R5, R4, R3       R5 = 000E
+1563   // xor R6, R5, R2      R6 = FFF1
+0022   // add R2, R0, R0       R2 = 0000
+A102   // addi R2, R0, 7’b0000010          R2 = 0002
+0D34   // sll R3, R3, R2         R3 = 003C
+0D35   // mult R3, R3, R2       R3 = 0078
+0D46   // sub R4, R3, R2       R4 = 0076
+0E57   // slt R5, R3, R4      R5 = 0000
+11D7   // slt R5, R4, R3     R5 = 0001
+4180   // sw R3, 0(R0)      DM[0] = 0078
+2300    // lw R6, 0(R0)      R6 = 0078
+8E92   // beq R3, R5, 0012     Program counter = 16
+0000   // nop
+8F02   // beq R3, R6, 0002    Program counter = 19
+0000   // nop
+0000   // nop
+6018   // j 0017
+0000   // nop
+0000   // nop
+0000   // nop
+C022   // jal 0022      Program Counter = 34
+A241   // addi R4, R0, 0041     R4 = 0041
+4203   // sw R4, 3(R0)      DM[3] = 0041
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+0000   // nop
+FC00   // jr R7      Program counter = 23

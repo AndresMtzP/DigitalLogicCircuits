@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
+</msg>
+
+<msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+</msg>
+
+<msg type="warning" file="Place" num="916" delta="old" >Local congestion has been detected on component <arg fmt="%s" index="1">outPin_OBUF</arg>. There is a limitation that at most <arg fmt="%d" index="2">2</arg> global signals can drive non-clock pins per CLB. The placer has detected that component <arg fmt="%s" index="3">outPin_OBUF</arg> has <arg fmt="%d" index="4">3</arg> non-clock pins driven by global signals. Placement will continue but note that this situation may lead to an unroutable situation. 
+</msg>
+
+<msg type="error" file="Place" num="1136" delta="old" >This design contains a global buffer instance, &lt;<arg fmt="%s" index="1">sck00/clkout2_buf</arg>&gt;, driving the net, &lt;<arg fmt="%s" index="2">clk2</arg>&gt;, that is driving the following (first <arg fmt="%d" index="3">30</arg>) non-clock load pins.
+<arg fmt="%s" index="4">&lt; PIN: Mmux_outPin11.A2; &gt;
+</arg>This is not a recommended design practice in Spartan-6 due to limitations in the global routing that may cause excessive delay, skew or unroutable situations.  It is recommended to only use a BUFG resource to drive clock loads. If you wish to override this recommendation, you may use the CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote this message to a WARNING and allow your design to continue.
+<arg fmt="%s" index="5">&lt; PIN &quot;sck00/clkout2_buf.O&quot; CLOCK_DEDICATED_ROUTE = FALSE; &gt;
+</arg>
+</msg>
+
+<msg type="error" file="Place" num="1136" delta="old" >This design contains a global buffer instance, &lt;<arg fmt="%s" index="1">sck00/clkout3_buf</arg>&gt;, driving the net, &lt;<arg fmt="%s" index="2">clk3</arg>&gt;, that is driving the following (first <arg fmt="%d" index="3">30</arg>) non-clock load pins.
+<arg fmt="%s" index="4">&lt; PIN: Mmux_outPin11.A5; &gt;
+</arg>This is not a recommended design practice in Spartan-6 due to limitations in the global routing that may cause excessive delay, skew or unroutable situations.  It is recommended to only use a BUFG resource to drive clock loads. If you wish to override this recommendation, you may use the CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote this message to a WARNING and allow your design to continue.
+<arg fmt="%s" index="5">&lt; PIN &quot;sck00/clkout3_buf.O&quot; CLOCK_DEDICATED_ROUTE = FALSE; &gt;
+</arg>
+</msg>
+
+<msg type="error" file="Place" num="1136" delta="old" >This design contains a global buffer instance, &lt;<arg fmt="%s" index="1">sck00/clkout1_buf</arg>&gt;, driving the net, &lt;<arg fmt="%s" index="2">clk1</arg>&gt;, that is driving the following (first <arg fmt="%d" index="3">30</arg>) non-clock load pins.
+<arg fmt="%s" index="4">&lt; PIN: Mmux_outPin11.A4; &gt;
+</arg>This is not a recommended design practice in Spartan-6 due to limitations in the global routing that may cause excessive delay, skew or unroutable situations.  It is recommended to only use a BUFG resource to drive clock loads. If you wish to override this recommendation, you may use the CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote this message to a WARNING and allow your design to continue.
+<arg fmt="%s" index="5">&lt; PIN &quot;sck00/clkout1_buf.O&quot; CLOCK_DEDICATED_ROUTE = FALSE; &gt;
+</arg>
+</msg>
+
+<msg type="error" file="Pack" num="1654" delta="old" >The timing-driven placement phase encountered an error.
+</msg>
+
+</messages>
+

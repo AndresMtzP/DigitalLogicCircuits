@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab6.twx lab6.ncd -o lab6.twr lab6.pcf -ucf board.ucf
+
+Design file:              lab6.ncd
+Physical constraint file: lab6.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock IO_DSW<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IO_DSW<0>      |         |         |         |    0.962|
+IO_DSW<1>      |         |         |         |    0.962|
+IO_DSW<2>      |         |         |         |    0.962|
+IO_PB<0>       |         |         |   -0.099|   -0.099|
+IO_PB<1>       |         |         |   -0.133|   -0.133|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IO_DSW<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IO_DSW<0>      |         |         |         |    0.962|
+IO_DSW<1>      |         |         |         |    0.962|
+IO_DSW<2>      |         |         |         |    0.962|
+IO_PB<0>       |         |         |   -0.202|   -0.202|
+IO_PB<1>       |         |         |   -0.225|   -0.225|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IO_DSW<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IO_DSW<0>      |         |         |         |    0.962|
+IO_DSW<1>      |         |         |         |    0.962|
+IO_DSW<2>      |         |         |         |    0.962|
+IO_PB<0>       |         |         |   -1.172|   -1.172|
+IO_PB<1>       |         |         |   -1.206|   -1.206|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IO_PB<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IO_DSW<0>      |         |         |    2.207|    2.207|
+IO_DSW<1>      |         |         |    2.440|    2.440|
+IO_DSW<2>      |         |         |    3.101|    3.101|
+IO_PB<0>       |         |         |   -0.120|   -0.120|
+IO_PB<1>       |         |         |    0.088|    0.088|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IO_PB<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IO_DSW<0>      |         |         |    1.980|    1.980|
+IO_DSW<1>      |         |         |    2.213|    2.213|
+IO_DSW<2>      |         |         |    2.874|    2.874|
+IO_PB<0>       |         |         |   -0.318|   -0.318|
+IO_PB<1>       |         |         |   -0.110|   -0.110|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_CLOCK        |    3.903|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+IO_DSW<0>      |F_LED<1>       |   11.370|
+IO_DSW<0>      |F_LED<3>       |   10.781|
+IO_DSW<0>      |IO_LED<0>      |    6.191|
+IO_DSW<1>      |F_LED<1>       |   10.736|
+IO_DSW<1>      |F_LED<2>       |   11.309|
+IO_DSW<1>      |IO_LED<1>      |    6.630|
+IO_DSW<2>      |F_LED<1>       |   12.553|
+IO_DSW<2>      |F_LED<2>       |   12.783|
+IO_DSW<2>      |F_LED<3>       |   11.605|
+IO_DSW<2>      |IO_LED<2>      |    6.683|
+IO_DSW<3>      |IO_LED<3>      |    6.525|
+IO_DSW<4>      |IO_LED<4>      |    6.565|
+IO_DSW<5>      |IO_LED<5>      |    6.363|
+IO_DSW<6>      |IO_LED<6>      |    6.444|
+IO_DSW<7>      |IO_LED<7>      |    6.414|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Mar 12 23:02:32 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 237 MB
+
+
+
